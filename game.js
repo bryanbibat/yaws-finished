@@ -324,7 +324,7 @@ BasicGame.Game.prototype = {
     if (enemy.alive) {
       enemy.play('hit');
     } else {
-      explode(enemy);
+      this.explode(enemy);
       if (enemy.key === "greenEnemy") {
         this.score += 100;
       } else if (enemy.key === "whiteEnemy") { 
